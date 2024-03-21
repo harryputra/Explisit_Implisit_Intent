@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp">
+
+    <!-- Profile -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_image" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewNilai"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/cardViewProfile"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewNilai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_addchart_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Kontak Kami -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewContactUs"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/cardViewProfile"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewContactUs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact_image" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Website Kami -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewWebsite"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/cardViewProfile"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toEndOf="@id/cardViewContactUs"
+        android:elevation="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/website_image" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- Hitung Nilai Mahasiswa -->
+
+</RelativeLayout>
